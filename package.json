@@ -1,0 +1,56 @@
+{
+    "name": "tsoa-inheritance-poc",
+    "version": "0.0.1",
+    "description": "tsoa-inheritance-poc APIs.",
+    "author": "jpomerd@jci.com",
+    "license": "SEE LICENSE IN LICENSE",
+    "main": "index.js",
+    "engines": {
+        "node": ">=14 <15",
+        "npm": "~6.14"
+    },
+    "repository": {
+        "type": "git",
+        "url": ""
+    },
+    "bugs": {
+        "url": ""
+    },
+    "homepage": "",
+    "scripts": {
+        "start": "ts-node --transpile-only -r tsconfig-paths/register dist/index.ts",
+        "dev": "nodemon --watch 'src/**/*.ts' --exec ts-node -r tsconfig-paths/register src/index.ts",
+        "build": "tsoa spec-and-routes",
+        "clean": "rimraf dist/* && rimraf tmp/ && rimraf src/build/*"
+    },
+    "dependencies": {
+        "@apidevtools/swagger-parser": "^10.1.0",
+        "axios": "^0.21.4",
+        "body-parser": "^1.20.0",
+        "cors": "^2.8.5",
+        "debug": "^2.6.9",
+        "express": "^4.18.1",
+        "express-async-handler": "^1.1.4",
+        "express-openapi-validator": "^4.13.7",
+        "openapi-types": "^8.0.0",
+        "sequelize": "^6.20.1",
+        "swagger-jsdoc": "^6.2.1",
+        "swagger-ui-express": "^4.4.0",
+        "ts-node": "^10.8.1",
+        "tsconfig-paths": "^3.14.1",
+        "tsoa": "^4.0.0",
+        "winston": "^3.7.2",
+        "yaml": "^1.10.2"
+    },
+    "devDependencies": {
+        "@types/debug": "0.0.30",
+        "@types/express": "^4.17.13",
+        "@types/express-serve-static-core": "^4.17.24",
+        "@types/node": "^15.14.9",
+        "@types/swagger-jsdoc": "^6.0.1",
+        "@types/swagger-ui-express": "^4.1.3",
+        "nodemon": "^2.0.16",
+        "package": "^1.0.1",
+        "typescript": "^4.7.3"
+    }
+}

@@ -1,0 +1,12 @@
+{
+  "entryFile": "src/index.ts",
+  "noImplicitAdditionalProperties": "silently-remove-extras",
+  "controllerPathGlobs": ["src/routes/**/*.ts", "src/controllers/**/*.ts"],
+  "spec": {
+    "outputDirectory": "./src/build",
+    "specVersion": 3
+  },
+  "routes": {
+    "routesDir": "./src/build"
+  }
+}
